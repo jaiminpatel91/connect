@@ -1,0 +1,10 @@
+#container{
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid grey;
+    display: inline-block;
+}
+#profilePicBox{
+    height: 220px;
+    border-radius: 20px;
+}

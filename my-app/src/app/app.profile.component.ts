@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.profile.component.html'
 })
 export class ProfileComponent {
-  title = 'profile';
+   
 }

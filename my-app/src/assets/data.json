@@ -1,0 +1,9 @@
+{
+    "result": {  
+    "id": "1",  
+    "fname": "Jaimin",  
+    "lname": "Patel",
+    "profilePic": "/assets/images/default.jpg",
+    "post": ["Hello this is my first post", "hello this is my second post", "Hello this is my third post"]
+        }
+  }

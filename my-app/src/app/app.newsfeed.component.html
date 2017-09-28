@@ -1,3 +1,12 @@
-<h1>
-    I'm newsfeed
-    </h1>
+<div id="mainContainer">
+       <div>
+           <textarea [(ngModel)]="newPost" class="form-control" placeholder="What You Think.. !" rows="3" cols="70"></textarea>
+       </div>
+       <div>
+            <button (click)="addTodo(); resetPost()" class="btn btn-primary">Post</button>
+       </div>
+       <div *ngFor="let data of scope.result.post.slice().reverse()">
+           <img src="./assets/images/default.jpg" style="height: 45px; width: 45px; border-radius: 25px"/>
+           <span>{{data}}</span>
+       </div>
+</div>
