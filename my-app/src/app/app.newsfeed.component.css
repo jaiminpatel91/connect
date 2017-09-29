@@ -1,5 +1,17 @@
 #mainContainer{
-    position: absolute;
+    position: relative;
     display: inline-block;
     padding: 15px;
+    border-left: 1px solid grey;
+}
+
+#postContainer{
+    margin: 10px 0px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.divInline{
+    display: inline-block;
 }

@@ -1,9 +1,9 @@
 {
     "result": {  
     "id": "1",  
-    "fname": "Jaimin",  
+    "fname": "jaimin",  
     "lname": "Patel",
     "profilePic": "/assets/images/default.jpg",
-    "post": ["Hello this is my first post", "hello this is my second post", "Hello this is my third post"]
-        }
+    "post": ["this is third post","this is second post", "this is forst post"]
+    }
   }

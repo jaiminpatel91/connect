@@ -10,6 +10,9 @@ export class NewsFeedComponent {
   
      scope: any;
      newPost: any;
+     profilePicUrl: string;
+     fName: string;
+     lName: string;
 
   constructor(private _MainService: MainService)
   {
@@ -18,6 +21,9 @@ export class NewsFeedComponent {
       (res) => {
         this.scope = res;
         console.log("scope is = ", this.scope.result);
+        this.profilePicUrl = this.scope.result.profilePic;
+        this.fName = this.scope.result.fname;
+        this.lName = this.scope.result.lname;
       },
       (error) => console.log("error : " + error),
             () => console.log('Error in GetApplication in Login : ' + Error)
@@ -26,7 +32,7 @@ export class NewsFeedComponent {
 
   addTodo(){
     if(this.newPost){
-      this.scope.result.post.push(this.newPost);
+      this.scope.result.post.unshift(this.newPost);
     }
   }
 

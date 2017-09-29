@@ -2,11 +2,16 @@
        <div>
            <textarea [(ngModel)]="newPost" class="form-control" placeholder="What You Think.. !" rows="3" cols="70"></textarea>
        </div>
-       <div>
+       <div style="margin-top: 8px;">
             <button (click)="addTodo(); resetPost()" class="btn btn-primary">Post</button>
        </div>
-       <div *ngFor="let data of scope.result.post.slice().reverse()">
-           <img src="./assets/images/default.jpg" style="height: 45px; width: 45px; border-radius: 25px"/>
-           <span>{{data}}</span>
+       <div *ngFor="let data of scope.result.post" id="postContainer">
+           <div class="divInline">
+                <img src="{{profilePicUrl}}" style="height: 50px; width: 50px; border-radius: 25px"/>
+           </div>
+           <div class="divInline">
+               <a routerLink="/profile"><span style="font-size: 12px">{{fName}}  {{lName}}</span></a><br>
+                <p>{{data}}</p>
+           </div>
        </div>
 </div>
