@@ -4,6 +4,10 @@
     "fname": "jaimin",  
     "lname": "Patel",
     "profilePic": "/assets/images/default.jpg",
-    "post": ["this is third post","this is second post", "this is forst post"]
+    "post": [{
+      "content": "this is first post",
+      "like": 15,
+      "comment": "nice status"
+    }]
     }
   }

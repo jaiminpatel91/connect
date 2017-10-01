@@ -1,3 +1,24 @@
-<h1>
-    I'm profile page
-</h1>
+<div id="mainContainer">
+       <div>
+           <textarea [(ngModel)]="newPost" class="form-control" placeholder="What You Think.. !" rows="3" cols="70"></textarea>
+       </div>
+       <div style="margin-top: 8px;">
+            <button (click)="addTodo(); resetPost()" class="btn btn-primary">Post</button>
+       </div>
+       <div *ngIf="scope">
+       <div *ngFor="let data of scope.result.post; let i = index" id="postContainer">
+           <div class="divInline">
+                <img src="{{profilePicUrl}}" style="height: 50px; width: 50px; border-radius: 25px"/>
+           </div>
+           <div class="divInline">
+               <a routerLink="/profile"><span style="font-size: 12px">{{fName}}  {{lName}}</span></a><br>
+                <p style="word-wrap: break-word; white-space: pre-line">{{data.content}}</p>
+           </div>
+           <div><i (click)="likeCounter(i)" class="material-icons">thumb_up</i>
+            {{data.like}}
+            </div>
+            <div>{{data.comment}}
+            </div>
+       </div>
+       </div>
+</div>
