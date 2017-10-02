@@ -8,6 +8,22 @@
       "content": "this is first post",
       "like": 15,
       "comment": "nice status"
+    }],
+    "friends": [{
+      "name": "Rajveer Yadav",
+      "profilePic": "/assets/images/friend1.jpg"
+    },
+    {
+      "name": "Hitesh Prajapati",
+      "profilePic": "/assets/images/friend2.jpg"
+    },
+    {
+      "name": "Sandeep Patel",
+      "profilePic": "/assets/images/friend3.jpg"
+    },
+    {
+      "name": "chintan shah",
+      "profilePic": "/assets/images/friend4.jpeg"
     }]
     }
   }

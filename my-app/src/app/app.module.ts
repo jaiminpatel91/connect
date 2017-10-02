@@ -13,13 +13,15 @@ import { ProfileComponent } from './app.profile.component';
 import { FooterComponent } from './app.footer.component';
 import { NotificationComponent } from './app.notification.component';
 import { SettingComponent } from './app.setting.component';
+import { FriendsComponent } from './app.friends.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/newsfeed', pathMatch: 'full'},
   { path: 'newsfeed', component: NewsFeedComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'notification', component: NotificationComponent },
-  { path: 'setting', component: SettingComponent }
+  { path: 'setting', component: SettingComponent },
+  { path: 'friends', component: FriendsComponent}
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     ProfileComponent,
     FooterComponent,
     NotificationComponent,
-    SettingComponent
+    SettingComponent,
+    FriendsComponent
   ],
   imports: [
     BrowserModule,
