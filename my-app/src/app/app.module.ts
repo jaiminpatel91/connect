@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+import { LoginComponent } from './app.login.component';
 import { MainService } from './app.main.service';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     HeaderComponent,
     LeftPanelComponent,
     NewsFeedComponent,
