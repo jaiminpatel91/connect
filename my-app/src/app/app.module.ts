@@ -17,7 +17,7 @@ import { SettingComponent } from './app.setting.component';
 import { FriendsComponent } from './app.friends.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/newsfeed', pathMatch: 'full'},
+  { path: 'login', component: LoginComponent},
   { path: 'newsfeed', component: NewsFeedComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'notification', component: NotificationComponent },
